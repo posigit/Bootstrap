@@ -7,97 +7,76 @@
     <title>My First Bootstrap</title>
 </head>
 <body>
-    <!-- Heading tags -->
-    <h1>Ghost Hacker</h1>
-    <h2>This is h2</h2>
-    <h3 class="h6">This is h6</h3>
-    <h4>This is h4</h4>
+    <div class="container-lg my-5">
+        <h2>basic grid</h2>
+        <div class="row">
+            <div class="col">
+                <div class="bg-info p-5">col 1</div>
+            </div>
+            <div class="col">
+                <div class="bg-info p-5">col 2</div>
+            </div>
+            <div class="col">
+                <div class="bg-info p-5">col 3</div>
+            </div>
 
-    <!-- Display tags -->
-    <h1 class="display-1">Display 1</h1>
-    <h1 class="display-3">Display 3</h1>
-    <h1 class="display-6">Display 6</h1>
-
-    <!-- Lead text & alignment -->
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-
-    <p class="lead text-center">Center</p>
-    <p class="lead text-end">right</p>
-
-    <!-- text decoration & font weight -->
-    <p class="text-decoration-underline">this text is underlined</p>
-    <p class="text-decoration-line-through">this text is line through</p>
-    <p class="fw-bold">this text is bold</p>
-    <small class="fw-bold text-decoration-line-through">this text is small</small>
-
-    <!-- text colours -->
-    <p class="text-primary">theme primary colour</p>
-    <p class="text-secondary">theme secondary colour</p>
-    <p class="text-info">theme info colour</p>
-    <p class="text-warning">theme warning colour</p>
-    <p class="text-success">theme warning colour</p>
-    <p class="text-danger">theme danger colour</p>
-    <p class="text-muted">theme danger colour</p>
-
-    <!-- bg colours -->
-    <p class="text-white bg-primary">white text on blue bg</p>
-    <p class="text-white bg-danger">white text on red bg</p>
-    <p class="text-light bg-warning">white text on yellow bg</p>
-
-    <!-- basic buttons -->
-    <h2>Basic Buttons</h2>
-    <button class="btn btn-primary">Primary button</button>
-    <button class="btn btn-secondary"> Secondary button</button>
-
-    <!-- anchor tags as buttons -->
-    <h2>Anchor buttons</h2>
-    <a href="#" class="btn btn-info">info anchor tag</a>
-    <a href="#" class="btn btn-success">success anchor tag</a>
-
-    <!-- button sizes -->
-    <h2>Button Sizes</h2>
-    <button class="btn btn-lg btn-danger">large danger button</button>
-    <button class="btn btn-sm btn-warning">small warning button</button>
-
-    <!-- outlined styles -->
-    <h2>Button Styles</h2>
-    <button class="btn btn-outline-danger">outlined danger button</button>
-    <button class="btn btn-lg btn-outline-secondary">large outlined secondary button</button>
-
-    <!-- button groups -->
-    <h2>Button Groups</h2>
-    <div class="btn-group">
-        <button class="btn btn-warning">Button 1</button>
-        <button class="btn btn-success">Button 2</button>
-        <button class="btn btn-secondary">Button 3</button>
+            <div class="col">
+                <div class="bg-info p-5">col 3</div>
+            </div>
+        </div>
     </div>
 
-    <!-- margin & padding -->
-    <h2>Margin & Padding</h2>
-    <div class="bg-primary m-1 p-1"> small margin & padding</div>
-    <div class="bg-primary m-5 p-5"> large margin & padding</div>
-    <div class="bg-secondary my-3 px-3">margin in y direction, padding in x direction</div>
-    <div class="bg-success mt-2 mb-1 ms-3 me-2 pt-2 pb-3 ps-4 pe-3">m & p in each direction</div>
 
+    <div class="container-lg my-5">
+        <h2>column widths</h2>
+        <div class="row">
+            <div class="col-6">
+                <div class="bg-secondary p-5">col 1</div>
+            </div>
 
-    <!-- borders -->
-    <div class="border mt-3 p-3 bg-warning">default border</div>
-    <div class="border m-3 p-3 border-start border-success border-5">go</div>
-    <div class="m-2 p-2 border-start border-end border-danger border-5">danger one sided border</div>
-    <div class="m-3 p-3 border rounded border-5 border-info">thick info-coloured rounded border</div>
-    <div class="m-2 p-3 border rounded-pill border-5 border-secondary">rounded pill corner</div>
+            <div class="col-3">
+                <div class="bg-success p-5">col 2</div>
+            </div>
 
-    <!-- box-shadow -->
-    <div class="m-2 p-3 shadow-lg">d</div>
-
-    <!-- font weight -->
-    <p class="fst-italic fw-bold">bolid italic</p>
-
-    <div class="container">
-        <h2>Container Div</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat voluptatum repellat atque eaque est, tempora consectetur ab iste ut, sunt earum debitis minima laboriosam vel iusto explicabo modi, possimus quia!</p>
+            <div class="col-3">
+                <div class="bg-dark text-light p-5">col 3</div>
+            </div>
+        </div>
     </div>
+
+
+    <div class="container-lg my-5">
+        <h2>responsive column widths</h2>
+        <div class="row">
+            <div class="col-sm-4 col-lg-6">
+                <div class="bg-primary text-light p-5">col 1</div>
+            </div>
+
+            <div class="col-sm-4 col-lg-3">
+                <div class="bg-primary text-light p-5">col 2</div>
+            </div>
+
+            <div class="col-sm-4 col-lg-3">
+                <div class="bg-primary text-light p-5">col 3</div>
+            </div>
+    </div>
+
+
+    <div class="container-lg my-5">
+        <h2>justifying columns</h2>
+        <div class="row justify-content-between">
+            <div class="col-md-3">
+                <div class="bg-primary p-5">col 1</div>
+            </div>
+            <div class="col-md-3">
+                <div class="bg-primary p-5">col 2</div>
+            </div>
+            <div class="col-md-3">
+                <div class="bg-primary p-5">col 3</div>
+            </div>
+        </div>
+    </div>
+
 
 
 
