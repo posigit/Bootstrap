@@ -5,99 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>My First Bootstrap</title>
+    <style>
+        section {
+            padding: 60px 0px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Heading tags -->
-    <h1>Ghost Hacker</h1>
-    <h2>This is h2</h2>
-    <h3 class="h6">This is h6</h3>
-    <h4>This is h4</h4>
 
-    <!-- Display tags -->
-    <h1 class="display-1">Display 1</h1>
-    <h1 class="display-3">Display 3</h1>
-    <h1 class="display-6">Display 6</h1>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-xl">
+            <a href="#intro" class="navbar-brand">
+                <span class="fw-bold text-secondary">
+                    Net Ninja - the Book
+                </span>
+            </a>
+            <!-- Toggle button for mobile nav -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <!-- Lead text & alignment -->
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-
-    <p class="lead text-center">Center</p>
-    <p class="lead text-end">right</p>
-
-    <!-- text decoration & font weight -->
-    <p class="text-decoration-underline">this text is underlined</p>
-    <p class="text-decoration-line-through">this text is line through</p>
-    <p class="fw-bold">this text is bold</p>
-    <small class="fw-bold text-decoration-line-through">this text is small</small>
-
-    <!-- text colours -->
-    <p class="text-primary">theme primary colour</p>
-    <p class="text-secondary">theme secondary colour</p>
-    <p class="text-info">theme info colour</p>
-    <p class="text-warning">theme warning colour</p>
-    <p class="text-success">theme warning colour</p>
-    <p class="text-danger">theme danger colour</p>
-    <p class="text-muted">theme danger colour</p>
-
-    <!-- bg colours -->
-    <p class="text-white bg-primary">white text on blue bg</p>
-    <p class="text-white bg-danger">white text on red bg</p>
-    <p class="text-light bg-warning">white text on yellow bg</p>
-
-    <!-- basic buttons -->
-    <h2>Basic Buttons</h2>
-    <button class="btn btn-primary">Primary button</button>
-    <button class="btn btn-secondary"> Secondary button</button>
-
-    <!-- anchor tags as buttons -->
-    <h2>Anchor buttons</h2>
-    <a href="#" class="btn btn-info">info anchor tag</a>
-    <a href="#" class="btn btn-success">success anchor tag</a>
-
-    <!-- button sizes -->
-    <h2>Button Sizes</h2>
-    <button class="btn btn-lg btn-danger">large danger button</button>
-    <button class="btn btn-sm btn-warning">small warning button</button>
-
-    <!-- outlined styles -->
-    <h2>Button Styles</h2>
-    <button class="btn btn-outline-danger">outlined danger button</button>
-    <button class="btn btn-lg btn-outline-secondary">large outlined secondary button</button>
-
-    <!-- button groups -->
-    <h2>Button Groups</h2>
-    <div class="btn-group">
-        <button class="btn btn-warning">Button 1</button>
-        <button class="btn btn-success">Button 2</button>
-        <button class="btn btn-secondary">Button 3</button>
-    </div>
-
-    <!-- margin & padding -->
-    <h2>Margin & Padding</h2>
-    <div class="bg-primary m-1 p-1"> small margin & padding</div>
-    <div class="bg-primary m-5 p-5"> large margin & padding</div>
-    <div class="bg-secondary my-3 px-3">margin in y direction, padding in x direction</div>
-    <div class="bg-success mt-2 mb-1 ms-3 me-2 pt-2 pb-3 ps-4 pe-3">m & p in each direction</div>
+            <!-- navbar links -->
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#topics" class="nav-link">About The Book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#reviews" class="nav-link">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Get In Touch</a>
+                    </li>
+                    <li class="nav-item d-md-none">
+                        <a href="#pricing" class="nav-link">Pricing</a>
+                    </li>
+                    <li class="nav-item ms-2 d-none d-md-inline">
+                        <a href="#pricing" class="btn btn-secondary">buy now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
 
-    <!-- borders -->
-    <div class="border mt-3 p-3 bg-warning">default border</div>
-    <div class="border m-3 p-3 border-start border-success border-5">go</div>
-    <div class="m-2 p-2 border-start border-end border-danger border-5">danger one sided border</div>
-    <div class="m-3 p-3 border rounded border-5 border-info">thick info-coloured rounded border</div>
-    <div class="m-2 p-3 border rounded-pill border-5 border-secondary">rounded pill corner</div>
+    <!-- main image & intro text -->
+    <section class="intro">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 text-center text-md-start">
+                    <h1>
+                        <div class="display-2">Black-Belt</div>
+                        <div class="display-5 text-muted">Your Coding Skills</div>
+                    </h1>
+                    <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <a href="#pricing" class="btn btn-lg btn-secondary">Buy Now</a>
+                </div>
+                <div class="col-md-5 text-center d-none d-md-block">
+                    <img class="img-fluid" src="/assets/ebook-cover.png" alt="ebook cover">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- box-shadow -->
-    <div class="m-2 p-3 shadow-lg">d</div>
 
-    <!-- font weight -->
-    <p class="fst-italic fw-bold">bolid italic</p>
-
-    <div class="container">
-        <h2>Container Div</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat voluptatum repellat atque eaque est, tempora consectetur ab iste ut, sunt earum debitis minima laboriosam vel iusto explicabo modi, possimus quia!</p>
-    </div>
 
 
 
